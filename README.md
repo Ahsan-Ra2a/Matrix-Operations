@@ -1,9 +1,4 @@
-# Matrix-Operations
-Here’s a clear description and breakdown of your project:
-
----
-
-## **Matrix Calculator Project**
+# **Matrix Calculator Project**
 
 ### **Introduction**
 The Matrix Calculator project is a console-based application built in Assembly Language using the **Irvine32 library**. This project provides users with essential matrix operations, including addition, subtraction, multiplication, and display functionalities for 2x2 and 3x3 matrices. The project is intended to help students and developers understand how to manipulate matrices and perform mathematical operations using assembly language.
