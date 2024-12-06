@@ -1,0 +1,33 @@
+INCLUDE Irvine32.inc
+
+.data
+	array DWORD 4,3,10,7
+	count DWORD 2
+	bc DWORD ?
+.code
+	main PROC
+	mov esi, OFFSET array
+	mov edi, OFFSET array
+	add edi, 12
+
+determinant:
+	mov eax, [esi]
+	mov edx, [edi]
+	mul edx
+	add esi, 4
+	sub edi, 4
+	PUSH eax
+	dec count
+	cmp count, 0
+	ja determinant
+	
+	pop eax
+	mov bc, eax
+	pop edx
+	sub edx, bc
+
+	mov eax, edx
+	call Writeint
+	exit
+main ENDP
+END main
